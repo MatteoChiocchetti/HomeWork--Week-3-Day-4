@@ -7,3 +7,11 @@ for (let i = 1; i <= 90; i++) {
   cell.innerText = i;
   cellElement.appendChild(cell);
 }
+const clickedBtn = function () {
+  let randomNum = Math.floor(Math.random() * 89);
+  console.log(randomNum);
+  const cells = document.querySelectorAll(".cell");
+  cells[randomNum].classList.add("selected");
+
+  console.log(cells[randomNum]);
+};
